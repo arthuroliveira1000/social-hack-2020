@@ -20,5 +20,25 @@ html {
 }
 
 body {
-  background-color: #ecf0f1;
+  background-image: url("assets/dist/image/background1.png");
+  background-size: contain;
+}
+
+.display-4, p, h5{
+  color: #f7f7f7;
+}
+
+.display-4 {
+  font-weight: 400;
+}
+.text-muted {
+  color: #f8f9fa !important;
+}
+
+.title-page {
+  color: #212529 !important;
+}
+
+.offer-view {
+  color: #343a40;
 }
