@@ -29,6 +29,11 @@
         font-size: 3.5rem;
       }
     }
+
+    .lead {
+      font-weight: 400;
+    }
+    
   </style>
   <!-- Custom styles for this template -->
   <link href="main.css" rel="stylesheet">
@@ -38,65 +43,53 @@
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal title-page">SEJAA</h5>
     <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="company-register.html">Quero registrar o meu negócio</a>
+      <a class="p-2 text-dark" href="company-register.html">Quero registrar os meus serviços</a>
     </nav>
     <a class="btn btn-outline-primary" href="login.html">Login</a>
   </div>
 
   <div class="pricing-header px-3 py-3 pt-md-7 pb-md-6 mx-auto text-center">
-    <h1 class="display-4">Contribua para o desenvolvimento local que você vive!</h1>
-    <p class="lead">Pesquise por produtos e serviços próximos</p>
+    <h1 class="display-4">Encontre serviços próximos a você</h1>
+    <p class="lead">Pesquise por produtos e serviços</p>
   </div>
   <div class="container">
     <form action="search-result.html">
       <div class="form-row align-items-center">
-        <div class="col-auto">
-          <div class="mb-2">
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn btn-outline-secondary">Produto</button>
-              <button type="button" class="btn btn btn-outline-secondary">Serviço</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-5">
+        <div class="col-4">
           <label class="sr-only" for="inlineFormInputGroup"></label>
           <div class="input-group mb-2">
             <div class="input-group-prepend">
               <div class="input-group-text">Localização</div>
             </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Onde você está?">
+            <input type="text" class="form-control form-control-lg" id="inlineFormInputGroup"
+              placeholder="Onde você está?">
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="mb-2">
+            <input type="text" class="form-control form-control-lg" id="inlineFormInputGroup"
+              placeholder="O que você está procurando?">
           </div>
         </div>
         <div class="col-3">
-          <div class="mb-2">
-            <label class=" sr-only" for="segmento">Segmento</label>
-            <select class="custom-select" id="segmento">
-              <option value="" disabled selected>Segmento</option>
-              <option value="1">Limpeza</option>
-              <option value="2">Construção civil</option>
-              <option value="3">Saúde</option>
-              <option value="4">Alimento</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary mb-2">Pesquisar</button>
+          <button type="submit" class="btn btn-primary mb-2 btn-lg">Pesquisar</button>
         </div>
       </div>
     </form>
-    <p class="lead mt-5">Últimos serviços adicionados</p>
+    <p class="lead mt-5">Serviços com desconto na região</p>
     <div class="card-deck mb-3 text-center">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">São Leopoldo/RS</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">Pintura residencial</h1>
+          <h1 class="card-title pricing-card-title">Jardinagem</h1>
           <ul class="list-unstyled mt-3 mb-4">
-            <li>Texturas</li>
-            <li>Pinturas em geral</li>
+            <li>Poda de arbustos, herbáceas e árvores</li>
+            <li>Corte de gramado</li>
+            <li>10% de desconto</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Ver mais</button>
+          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Ver oferta</button>
         </div>
       </div>
       <div class="card mb-4 shadow-sm">
@@ -108,9 +101,9 @@
           <ul class="list-unstyled mt-3 mb-4">
             <li>Tintura de Sobrancelhas e Cílios</li>
             <li>Micropigmentação de Sobrancelhas</li>
-            <li>Micropigmentação de Lábios </li>
+            <li>20% de desconto</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Ver mais</button>
+          <button type="button" class="btn btn-lg btn-block btn-primary">Ver oferta</button>
         </div>
       </div>
       <div class="card mb-4 shadow-sm">
@@ -118,18 +111,17 @@
           <h4 class="my-0 font-weight-normal">Novo Hambuergo/RS</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">Lancheria</h1>
+          <h1 class="card-title pricing-card-title">Lancheria BOBs</h1>
           <ul class="list-unstyled mt-3 mb-4">
             <li>Combos</li>
             <li>Cachorro quente</li>
             <li>Bebidas</li>
-            <li>Sobremesas</li>
+            <li>5% de desconto</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+          <button type="button" class="btn btn-lg btn-block btn-primary">Ver oferta</button>
         </div>
       </div>
     </div>
-
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row">
         <div class="col-12 col-md">
